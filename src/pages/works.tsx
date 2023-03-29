@@ -1,10 +1,74 @@
-import { Heading, Text } from "@chakra-ui/react";
-
+import { Box, Center, Heading, Text, VStack } from '@chakra-ui/react';
+import { ProductionProps, ProductionCards } from '../components/production';
+const works: ProductionProps = {
+  productions: [
+    {
+      name: 'JKOJS',
+      description: 'JKOJSは競技プログラミングのサービスです',
+      type: 'アプリケーション',
+      link: [
+        {
+          name: 'GitHub',
+          url: 'https://github.com/mct-joken/kojs5-backend',
+        },
+      ],
+      imageUrl: 'https://github.com/mct-joken/kojs5-backend/raw/main/docs/img/jk-ojs.jpg',
+    },
+    {
+      name: 'pnket',
+      description: 'ただ別のチームのプロジェクトにするつもりだったプロジェクトの最初の部分を作っただけです。パッケージマネージャに特化した仕様になっています。',
+      type: 'アプリケーション',
+      link: [
+        {
+          name: 'GitHub',
+          url: 'https://github.com/Ablaze-MIRAI/pnket',
+        }
+      ],
+      imageUrl: '',
+    },
+    {
+      name: '#B43A6EEA',
+      description: '量産型Future Bassです。LFOをうまく使ってSuper Sawを動かしたりしました。',
+      type: 'メディア',
+      link: [
+        {
+          name: 'YouTube',
+          url: 'https://www.youtube.com/watch?v=fvJEkvtvan4'
+        }
+      ],
+      imageUrl: 'https://i.ytimg.com/vi/fvJEkvtvan4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDgAASKEIzS6ilxK76pLVHiV5cIoQ',
+    },
+    {
+      name: 'Reincarnated Victim',
+      description: 'Go言語のebitengineを使用して作った弾幕シューティングゲームです。敵を避けつつ、風船を20個撃ち落としたらクリアです。\n' +
+        '敵は種類によって異なる動きをしています。それに当たって5つのハートが全て無くなったら負けです。',
+      type: 'ゲーム',
+      imageUrl: 'https://cdn.discordapp.com/attachments/964378851163656232/1090604527868190720/IMG_4830.png'
+    },
+    {
+      name: 'box run',
+      description: 'box run',
+      type: 'ゲーム',
+      imageUrl: 'https://cdn.discordapp.com/attachments/964378851163656232/1090244187586314301/49.png'
+    },
+  ],
+};
 export const Works = () => {
   return (
-    <div>
-      <Text>制作物のページ</Text>
-      <Heading fontSize="xl">準備中...</Heading>
-    </div>
+    <>
+      <Box>
+        <Center>
+          <VStack>
+            <Heading fontSize='xl'>作品一覧のページ</Heading>
+            <Text>部員が作った作品を紹介します.</Text>
+          </VStack>
+        </Center>
+      </Box>
+      <Center>
+        <Box>
+          <ProductionCards {...works} />
+        </Box>
+      </Center>
+    </>
   );
 };
