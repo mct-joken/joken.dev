@@ -1,4 +1,4 @@
-import { Center, Heading, Text } from "@chakra-ui/react";
+import { Center, Heading } from "@chakra-ui/react";
 import { AchievementsCard } from "../components/achievementsCard";
 
 export const Achievements = () => {
@@ -25,12 +25,6 @@ export const Achievements = () => {
     <>
       <Center>
         <Heading fontSize="xl">活動実績のページ</Heading>
-      </Center>
-
-      <Center>
-        <Text>
-          <s>とりあえず</s>2021年度以降の実績を掲載しています.
-        </Text>
       </Center>
 
       <Center>
