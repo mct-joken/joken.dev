@@ -4,7 +4,7 @@ const works: ProductionProps = {
   productions: [
     {
       name: 'JKOJS',
-      description: 'JKOJSは競技プログラミングのサービスです',
+      description: 'オンラインジャッジと呼ばれる、競技プログラミングの大会を開催するのに必要なシステムの実装です。TypeScriptとGoで書かれています。',
       type: 'アプリケーション',
       link: [
         {
@@ -47,7 +47,7 @@ const works: ProductionProps = {
     },
     {
       name: 'box run',
-      description: 'box run',
+      description: 'カードゲームを作っていたはずが気づいたらアクションゲームになっていた。そのうちきちんと完成させます。使用言語はRuby',
       type: 'ゲーム',
       imageUrl: 'https://cdn.discordapp.com/attachments/964378851163656232/1090244187586314301/49.png'
     },
