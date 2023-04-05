@@ -51,6 +51,12 @@ const works: ProductionProps = {
       type: 'ゲーム',
       imageUrl: 'https://cdn.discordapp.com/attachments/964378851163656232/1090244187586314301/49.png'
     },
+    {
+      name: 'マ。feat.可不',
+      description: 'CeVIO AIの可不に歌ってもらった楽曲です。',
+      type: 'メディア',
+      imageUrl: 'https://media.discordapp.net/attachments/964378851163656232/1091663145325580358/bandicam_2023-01-11_23-03-43-242.jpg'
+    }
   ],
 };
 export const Works = () => {
