@@ -12,7 +12,7 @@ const works: ProductionProps = {
           url: 'https://github.com/mct-joken/kojs5-backend',
         },
       ],
-      imageUrl: 'https://github.com/mct-joken/kojs5-backend/raw/main/docs/img/jk-ojs.jpg',
+      imageUrl: 'https://raw.githubusercontent.com/poporonnet/kojs6-backend/v1/docs/img/jk-ojs.jpg',
     },
     {
       name: 'pnket',
