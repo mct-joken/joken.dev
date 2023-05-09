@@ -50,7 +50,27 @@ const members: memberProps = {
 	    }
       ],
       imageUrl: 'https://s.gravatar.com/avatar/465eab7f49d6f95d4132d2c774579d74?s=512'
-    }
+    },
+    {
+      realName: 'Canon424',
+      nickName: 'Canon',
+      position: '蝨ｨ邀榊ｹｴ謨ｰ繝医ャ繝�',
+      link: [
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/@c4n4242'
+        },
+        {
+          name: 'Misskey',
+          url: 'https://misskey.systems/@c4n4242'
+        },
+        {
+          name: 'GitHub',
+          url: 'https://github.com/C4NoN424'
+        },
+      ],
+      imageUrl: 'https://sjc1.vultrobjects.com/misskey-system/files/411ac7e8-84ee-4345-9e31-b166c9cc2c79.jpg'
+    },
   ]
 };
 
@@ -64,7 +84,7 @@ export const Members = () => {
             <Text>
               弊部のメンバーを紹介します.
               <br />
-              ※掲載許可取ってないので1人のみです.悪しからず.
+              {/* !※掲載許可取ってないので1人のみです.悪しからず. */}
             </Text>
           </VStack>
         </Center>
