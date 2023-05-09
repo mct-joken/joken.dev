@@ -84,7 +84,6 @@ export const Members = () => {
             <Text>
               弊部のメンバーを紹介します.
               <br />
-              {/* !※掲載許可取ってないので1人のみです.悪しからず. */}
             </Text>
           </VStack>
         </Center>
