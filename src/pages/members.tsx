@@ -66,7 +66,7 @@ const members: memberProps = {
 	    }
       ],
       imageUrl: 'https://avatars.githubusercontent.com/u/108327885?v=4'
-    }
+    },
     {
       realName: 'Canon424',
       nickName: 'Canon',
