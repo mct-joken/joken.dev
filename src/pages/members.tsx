@@ -52,6 +52,22 @@ const members: memberProps = {
       imageUrl: 'https://s.gravatar.com/avatar/465eab7f49d6f95d4132d2c774579d74?s=512'
     },
     {
+      realName: 'hamaann',
+      nickName: 'hamaann',
+      position: '創作に生きる亀',
+      link: [
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/LljKDJzur8Be327'
+        },
+        {
+          name: 'GitHub',
+          url: 'https://github.com/hamaann'
+	    }
+      ],
+      imageUrl: 'https://avatars.githubusercontent.com/u/108327885?v=4'
+    }
+    {
       realName: 'Canon424',
       nickName: 'Canon',
       position: '蝨ｨ邀榊ｹｴ謨ｰ繝医ャ繝�',
