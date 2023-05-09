@@ -30,6 +30,26 @@ const members: memberProps = {
         }
       ],
       imageUrl: 'https://avatars.githubusercontent.com/u/74781355?v=4'
+    },
+    {
+      realName: 'Piano Nakanoin',
+      nickName: 'Piano Nakanoin',
+      position: 'Rust Lab',
+      link: [
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/PianoCat1010'
+        },
+        {
+          name: 'GitHub',
+          url: 'https://github.com/NSK-1010'
+	    },
+    	{
+	      name: 'YouTube',
+	      url: 'https://www.youtube.com/@nsk-1010'
+	    }
+      ],
+      imageUrl: 'https://s.gravatar.com/avatar/465eab7f49d6f95d4132d2c774579d74?s=512'
     }
   ]
 };
