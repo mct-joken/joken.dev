@@ -6,7 +6,7 @@ const members: memberProps = {
     {
       realName: 'Tatsuto YAMAMOTO',
       nickName: 'laminne',
-      position: '部長',
+      position: '元部長',
       link: [
         {
           name: 'twitter',
