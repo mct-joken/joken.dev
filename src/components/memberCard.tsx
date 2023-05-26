@@ -5,11 +5,14 @@ import {
   CardBody,
   CardFooter,
   Heading,
-  HStack,
+  Center,
   Image,
   Stack,
   Text,
   Link,
+  Divider,
+  ButtonGroup,
+  SimpleGrid,
 } from "@chakra-ui/react";
 
 export type memberProps = {
@@ -25,32 +28,39 @@ export type memberProps = {
 // ToDo: 画像のフォールバック考える
 const MemberCard = ({ members }: memberProps) => {
   return (
-    <>
+    <SimpleGrid spacingY="2em">
       {members.map((m) => {
         return (
           <Card
-            direction={{ base: "column", sm: "row" }}
             overflow="hidden"
             variant="outline"
-            mt="1em"
             w="100%"
+            mb="1.5em"
             maxW="40em"
           >
-            <Image
-              objectFit="cover"
-              maxW={{ base: "100%", sm: "200px" }}
-              src={m.imageUrl}
-            />
-            <Stack>
-              <CardBody>
+
+            <CardBody>
+              <Stack mt='6' spacing='3'>
+                <Center>
+                  <Image
+                    objectFit="cover"
+                    maxW={{ base: "100%", sm: "200px" }}
+                    src={m.imageUrl}
+                    borderRadius='full'
+                  />
+                </Center>
                 <Heading size="md">{m.nickName}</Heading>
 
                 <Text py="2">{m.realName}</Text>
                 {m.position && <Badge colorScheme="green">{m.position}</Badge>}
-              </CardBody>
+              </Stack>
 
-              <CardFooter>
-                <HStack spacing={3} direction="row">
+            </CardBody>
+
+            <Divider />
+            <CardFooter>
+              <Center>
+                <ButtonGroup spacing='2'>
                   {m.link.map((link) => {
                     return (
                       <Link href={link.url}>
@@ -66,13 +76,13 @@ const MemberCard = ({ members }: memberProps) => {
                       </Link>
                     );
                   })}
-                </HStack>
-              </CardFooter>
-            </Stack>
+                </ButtonGroup>
+              </Center>
+            </CardFooter>
           </Card>
         );
       })}
-    </>
+    </SimpleGrid>
   );
 };
 

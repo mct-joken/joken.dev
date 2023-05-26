@@ -43,11 +43,11 @@ const members: memberProps = {
         {
           name: 'GitHub',
           url: 'https://github.com/NSK-1010'
-	    },
-    	{
-	      name: 'YouTube',
-	      url: 'https://www.youtube.com/@nsk-1010'
-	    }
+        },
+        {
+          name: 'YouTube',
+          url: 'https://www.youtube.com/@nsk-1010'
+        }
       ],
       imageUrl: 'https://s.gravatar.com/avatar/465eab7f49d6f95d4132d2c774579d74?s=512'
     },
@@ -63,7 +63,7 @@ const members: memberProps = {
         {
           name: 'GitHub',
           url: 'https://github.com/hamaann'
-	    }
+        }
       ],
       imageUrl: 'https://avatars.githubusercontent.com/u/108327885?v=4'
     },
