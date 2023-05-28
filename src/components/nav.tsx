@@ -21,14 +21,15 @@ export type LinkProps = {
     url: string;
     icon: IconType;
   }>;
+  onClick?: () => void;
 };
 
-export const Links = ({ links }: LinkProps) => {
+export const Links = ({ links, onClick }: LinkProps) => {
   return (
     <VStack>
       {links.map((l: any) => {
         return (
-          <Link to={l.url}>
+          <Link to={l.url} onClick={onClick}>
             <Button w="15em" leftIcon={<Icon as={l.icon} />}>
               {l.name}
             </Button>
@@ -72,7 +73,7 @@ export const Navigation = (props: LinkProps) => {
           </DrawerHeader>
 
           <DrawerBody>
-            <Links {...props} />
+            <Links {...props} onClick={onClose}/>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
